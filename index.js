@@ -11,10 +11,10 @@ const bodyParser = require('body-parser')
 const empRoute = require('./api/routes/employee')
 const loginRoute = require('./api/routes/login')
 const jobRoute = require('./api/routes/jobposition')
-const transRoute = require('./api/routes/transportation')
-const DtransRoute = require('./api/routes/detail_transportation')
-const leaveAR = require('./api/routes/leave_activity_report')
-const prettyRoute = require('./api/routes/detail_prettycash')
+// const transRoute = require('./api/routes/transportation')
+// const DtransRoute = require('./api/routes/detail_transportation')
+// const leaveAR = require('./api/routes/leave_activity_report')
+// const prettyRoute = require('./api/routes/detail_prettycash')
 
 app.use((req, res, next) =>{
     // const error = new Error("Not found")
@@ -62,11 +62,11 @@ app.get('/www', (req, res) => {
 // routes.initialize(app);
 app.use('/emp', empRoute)
 app.use('/job', jobRoute)
-app.use('/trans', transRoute)
-app.use('/dtrans', DtransRoute)
-app.use('/leavear', leaveAR)
-app.use('/emp', loginRoute)
-app.use('/cash', prettyRoute)
+// app.use('/trans', transRoute)
+// app.use('/dtrans', DtransRoute)
+// app.use('/leavear', leaveAR)
+// app.use('/emp', loginRoute)
+// app.use('/cash', prettyRoute)
 
 
 let ports = process.env.PORT || 4000
